@@ -1,8 +1,10 @@
 # Machine Learning Practical
 
-This repository contains the code for the University of Edinburgh [School of Informatics](http://www.inf.ed.ac.uk) course [Machine Learning Practical](http://www.inf.ed.ac.uk/teaching/courses/mlp/).
+This repository contains the code and report for the work done on top of codebase from the University of Edinburgh [School of Informatics] course [Machine Learning Practical]
 
-This assignment-based course is focused on the implementation and evaluation of machine learning systems. Students who do this course will have experience in the design, implementation, training, and evaluation of machine learning systems.
+This assignment-based course is focused on the implementation and evaluation of machine learning systems. It works on Convulation Neural Network with VGG model on CIFAR-10 and CIFAR-100 dataset.
+
+Transfer learning has proven itself to be an incredibly useful area in deep learning, not only by facilitating those with limited access to resources such as data and time, but also by driving a deeper understanding of neural network features in general. Like all areas of machine learning these methods come with their own set of difficulties and heuristic methods in tow. In this paper we shall motivate and further detail a project to investigate the use of Bayesian methods to automatically optimize these heuristically tuned parameters and potentially alleviate some of the methods well known symptoms.
 
 The code in this repository is split into:
 1. notebooks: 
@@ -21,37 +23,3 @@ The code in this repository is split into:
 6. network_trainer.py: Runs an experiment, composed of training, validation and testing. It is setup to use arguments such that one can easily write multiple bash scripts with different hyperparameters and run experiments very quickly with minimal code changes.
     
     
-## Getting set up
-
-Detailed instructions for setting up a development environment for the course are given in [this file](notes/environment-set-up.md). Students doing the course will spend part of the first lab getting their own environment set up.
-Once you have setup the basic environment then to install the requirements for the tf_mlp repo simply run:
-```
-pip install -r requirements.txt
-```
-For CPU tensorflow and
-```
-pip install -r requirements_gpu.txt
-```
-for GPU tensorflow.
-
-If you install the wrong version of tensorflow simply run
-
-```
-pip uninstall $tensorflow_to_uninstall
-```
-replacing $tensorflow_to_uninstall with the tensorflow you want to install and then install the correct one 
-using pip install as normally done.
-
-## Additional Packages
-
-For the tf_mlp you are required to install either the tensorflow-1.4.1 package for CPU users or the tensorflow_gpu-1.4.1 for GPU users. Both of these can easily be installed via pip using:
-
-```
-pip install tensorflow
-```
-
-or 
-
-```
-pip install tensorflow_gpu
-```
