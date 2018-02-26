@@ -22,4 +22,5 @@ The code in this repository is split into:
 5. network_builder.py: Builds the tensorflow computation graph. In more detail, it builds the losses, tensorflow summaries and training operations.
 6. network_trainer.py: Runs an experiment, composed of training, validation and testing. It is setup to use arguments such that one can easily write multiple bash scripts with different hyperparameters and run experiments very quickly with minimal code changes.
     
-    
+This is the interim report for building the baseline model.
+[Report](https://github.com/akshaykant/CNN_VGG_CIFAR_100/blob/master/report.pdf)
